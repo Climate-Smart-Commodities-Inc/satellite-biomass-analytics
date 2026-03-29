@@ -1,0 +1,93 @@
+streamlit==1.32.0
+moviepy==1.0.3
+TL;DR: If the proprietary systems hit a paywall, the true Tekton builder simply engineers their own. Below is the master architecture blueprint for an Open-Source Multi-Agent Framework. This script defines the exact roles, API connections, and handoff protocols to automate your entire "Roots to Revenue" ecosystem, bypassing Manus entirely.
+To build this yourself (using an open-source orchestrator like LangGraph or OpenManus), you must define the "Agentic Profiles." This script tells the central orchestrator exactly who is in the network, what their skills are, and how they pass data to each other—including the automated pipeline to turn your Yuja videos into full HeyGen avatars for all 5 speeches.
+File Name: Project_Harmony_Agent_Architecture.yaml
+# ==========================================
+# MULTI-AGENT SYSTEM ARCHITECTURE: PROJECT HARMONY
+# Lead Developer: Amanda Steele (IAM: Root Admin)
+# ==========================================
+
+system_settings:
+  objective: "Automate USDA-ARS grant logistics, B2B CRM generation, and HeyGen video production."
+  framework: "Open-Source Multi-Agent Orchestrator"
+  primary_user_iam: "Amanda Steele | Agribusiness Lead | MSCC Fayetteville"
+
+# ------------------------------------------
+# AGENT 1: THE ARCHITECT (Google Gemini)
+# ------------------------------------------
+agent_gemini:
+  role: "Lead Data Synthesizer & Logic Router"
+  description: "The brain of the operation. Takes human intent from Amanda and translates it into machine-executable code, CSVs, and [VECTORS]."
+  skills:
+    - "SSML Script Generation (Phonetic formatting for HeyGen)"
+    - "Data structure enforcement (Markdown, JSON, CSV)"
+  handoff_protocol: "Feeds structured SSML scripts to HeyGen; feeds CSV structures to Copilot365."
+
+# ------------------------------------------
+# AGENT 2: THE ENTERPRISE SYNTHESIZER (Copilot / Copilot365)
+# ------------------------------------------
+agent_copilot365:
+  role: "Document & Enterprise Manager"
+  description: "Bridges the AI logic into standard business formats."
+  skills:
+    - "Microsoft Word rendering (Red Binder compilation)"
+    - "Excel macro execution for hemp_biomass_logistics.csv"
+    - "PowerPoint generation for Motlow Board presentations"
+  api_endpoints: ["Graph API", "SharePoint"]
+
+# ------------------------------------------
+# AGENT 3: THE RESEARCH SYNDICATE (Perplexity + Grok + Cohere)
+# ------------------------------------------
+agent_research_syndicate:
+  role: "Real-Time Intelligence & Verification"
+  description: "A triad of LLMs dedicated to pulling live data without hallucination."
+  sub_agents:
+    - name: "Perplexity"
+      task: "Academic citation verification and EBSCOhost alternative scraping."
+    - name: "Grok"
+      task: "Real-time X (Twitter) scraping for TN Senate Bill 2486 and Senator Janice Bowling's committee movements."
+    - name: "Cohere"
+      task: "Retrieval-Augmented Generation (RAG) over the uploaded Fermentation PDFs."
+
+# ------------------------------------------
+# AGENT 4: THE B2B LOGISTICS TEAM (ZoomInfo + Explorium + HubSpot)
+# ------------------------------------------
+agent_crm_pipeline:
+  role: "Supply Chain & Lead Generation"
+  description: "Maps the US 64 corridor businesses and tracks corporate outreach."
+  workflow:
+    step_1: "Explorium analyzes regional supply chain gaps (Huntland to Decherd)."
+    step_2: "ZoomInfo fetches direct contact info for Nissan Bioplastics executives and Mountain View supply managers."
+    step_3: "HubSpot automatically creates the contact profiles, logs the 'Roots to Revenue' pitch, and sets follow-up reminders."
+
+# ------------------------------------------
+# AGENT 5: THE FINANCIAL AUDITOR (Xero)
+# ------------------------------------------
+agent_xero_finance:
+  role: "Decorticator Budget Manager"
+  description: "Maintains the financial reality of the grant proposal."
+  skills:
+    - "CAPEX tracking for the 184 Buncombe Road 'Mini-Barn' pilots."
+    - "Profit/Loss forecasting for the 70% supply chain security target."
+
+# ------------------------------------------
+# AGENT 6: THE AVATAR STUDIO (HeyGen API)
+# ------------------------------------------
+agent_heygen_studio:
+  role: "Automated Video Production"
+  description: "Clones Amanda's digital persona to deliver the 5 Project Harmony presentations."
+  source_data_url: "https://motlow.video.yuja.com"
+  workflow:
+    step_1: "Ingest the Yuja source video to map Amanda's voice cadence, facial expressions, and visual identity."
+    step_2: "Receive the 5 TTS-optimized SSML speech scripts from Gemini (Intro, Cellular Jenga, Decorticator, Closed-Loop, Tribute)."
+    step_3: "Render 5 distinct .mp4 video presentations."
+    step_4: "Push completed video files back to Amanda's ePortfolio repository."
+
+How to Deploy Your Own Fleet
+By defining this architecture, you do not need to rely on a single, expensive platform that limits your credits. You are establishing an API Pipeline.
+ * The Core Logic: I (Gemini) write the scripts and structure the data.
+ * The Execution: You run a local Python script (using an open-source library like LangChain) that reads the .yaml file above.
+ * The Results: The Python script calls the HeyGen API to make the videos, calls the HubSpot API to add the Nissan contacts, and calls Grok to check the Senate floor.
+We can start the execution of Agent 6 right now. I have the 5 speech outlines memorized. Shall I generate the exact JSON/SSML API payload that you can feed directly into HeyGen to clone your Yuja video and render the first presentation?
+
