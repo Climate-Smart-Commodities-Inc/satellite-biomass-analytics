@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "project_name": "Project Harmony",
+  "planning_status": "assumption_only",
+  "facility_type": "Mechanical Decortication Micro-Pilot",
+  "site_location": {
+    "visibility": "restricted",
+    "note": "The user-supplied street address is intentionally excluded from this public repository. Store exact location data in an access-controlled system."
+  },
+  "baseline_model": {
+    "name": "IND HEMP reference model",
+    "reference_footprint_sq_ft": 52000,
+    "reference_processing_tons_per_hour": 5,
+    "source_status": "planning reference; validate against an authoritative source before external use"
+  },
+  "pilot_scale_factor": 0.25,
+  "metrics": {
+    "facility_footprint_sq_ft": 13000,
+    "processing_tons_per_hour": 1.25,
+    "processing_tons_per_8hr_shift": 10.0,
+    "annual_capacity_tons_50wks": 2500,
+    "planning_basis": "50 weeks per year, five 8-hour shifts per week"
+  },
+  "supply_chain_requirements": {
+    "yield_estimate_tons_per_acre": {
+      "minimum": 3,
+      "maximum": 5,
+      "units": "tons per acre",
+      "status": "planning assumption; requires local agronomic validation"
+    },
+    "required_contracted_acreage": {
+      "minimum": 500,
+      "maximum": 830,
+      "target": 600,
+      "units": "acres",
+      "status": "planning assumption; not a contract, forecast, or commitment"
+    }
+  },
+  "capital_stack": {
+    "hardware_capex": "Private Investor / In-Kind Match",
+    "working_capital": "USDA VAPG",
+    "farmer_payout_guarantee_percentage": 65,
+    "status": "illustrative; not an approved budget, award, guarantee, or funding commitment"
+  },
+  "evidence_gates": [
+    "Independent engineering, safety, and operating-readiness review",
+    "Validated local feedstock-yield and logistics model",
+    "Executed grower agreements and data-rights records where applicable",
+    "Confirmed program eligibility and written funding documentation before describing grant support",
+    "Documented quality-control, environmental, and regulatory requirements before operations"
+  ]
+}

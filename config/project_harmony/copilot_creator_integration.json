@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.1.0",
+  "project_name": "Project Harmony",
+  "status": "design_only",
+  "purpose": "Define a clean-room, evidence-controlled integration pattern for deterministic document ingestion and approval-stage review.",
+  "external_reference": {
+    "name": "GM-Copilot Studios / GM-Copilot-App",
+    "public_repository": "https://github.com/Cmccombs01/GM-Copilot-App",
+    "relationship_status": "public design reference only; no partnership, endorsement, access, code reuse, or affiliation is implied",
+    "reuse_rule": "Review licensing and obtain written permission before copying code, branding, prompts, data, or other protected material."
+  },
+  "ingestion_workflow": {
+    "inputs": [
+      "source document or telemetry payload",
+      "source identifier and version",
+      "rights and sensitivity classification",
+      "schema or validation contract"
+    ],
+    "stages": [
+      "capture_original",
+      "register_provenance",
+      "validate_schema_and_units",
+      "run_deterministic_rules",
+      "route_exception_or_review_queue",
+      "record_approval_decision",
+      "publish_role_appropriate_output"
+    ],
+    "prohibited_shortcuts": [
+      "No external claim from unreviewed or unproven input",
+      "No credential, personal data, exact site address, or private contact data in source control",
+      "No automatic grant, regulatory, safety, financial, or contract decision"
+    ]
+  },
+  "approval_workflow": {
+    "human_in_the_loop_role": "Systems Administrator",
+    "advisory_model": "Gemini 3.1 Pro",
+    "advisory_scope": [
+      "coherence review",
+      "traceability review",
+      "technical-language consistency",
+      "multilingual readiness",
+      "evidence-completeness review"
+    ],
+    "decision_rule": "Gemini may produce a recommendation after Systems Administrator consultation. The Systems Administrator records the final decision and any conditions or exceptions.",
+    "required_decision_log_fields": [
+      "source_version",
+      "decision_scope",
+      "evidence_links",
+      "systems_administrator_consultation",
+      "gemini_review_output",
+      "final_status",
+      "conditions_or_exceptions",
+      "timestamp"
+    ],
+    "reserved_approvals": [
+      "legal",
+      "regulatory",
+      "safety",
+      "financial",
+      "grant",
+      "privacy",
+      "contract",
+      "public publication"
+    ]
+  },
+  "credential_policy": {
+    "credential_source": "Manus managed Gemini connector or an approved secret manager",
+    "repository_storage": "prohibited",
+    "environment_variable_name": "GEMINI_API_KEY",
+    "rotation_policy": "Rotate any credential exposed in chat, logs, screenshots, commits, or client-side code before deployment."
+  },
+  "publication_controls": {
+    "canonical_language": "English",
+    "first_translation_languages": [
+      "Spanish",
+      "Dutch"
+    ],
+    "additional_languages": [
+      "Simplified Chinese",
+      "Japanese"
+    ],
+    "translation_gate": "Use a qualified translator or subject-matter reviewer for technical, legal, environmental, laboratory, carbon, financial, and commercialization content."
+  }
+}

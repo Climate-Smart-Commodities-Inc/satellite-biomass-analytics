@@ -1,0 +1,12 @@
+# Runtime credentials and local environment files
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+service-account*.json
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
