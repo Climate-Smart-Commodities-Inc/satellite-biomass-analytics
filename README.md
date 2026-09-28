@@ -13,7 +13,18 @@ This repository serves as the core geospatial intelligence and deterministic dat
 2. **Geospatial Processing:** Parsing Nitrogen-Phosphorus-Potassium (NPK) matrices, soil pH indicators, and drone-captured multispectral imaging layers.
 3. **UN SDG Alignment:** Programmatically anchoring all engineering workflows to United Nations Sustainable Development Goals 9 (Industry, Innovation, and Infrastructure), 12 (Responsible Consumption and Production), and 13 (Climate Action).
 
+## Project Harmony planning configuration
+
+The `config/project_harmony/` directory contains **planning-only** configuration for a decortication micro-pilot and a deterministic Copilot Creator integration pattern. The artifacts define data-ingestion controls, evidence gates, approval-stage review, and multilingual publication controls. They do not represent deployed infrastructure, model training, external partnerships, permits, funding awards, contracts, or operating results.
+
+Run the credential-free configuration check before changing these files:
+
+```bash
+python3 tools/validate_project_harmony_config.py
+```
+
+See [the integration design](docs/project-harmony-copilot-creator.md) for the review workflow, secure credential policy, external-reference boundaries, and assumptions that require independent validation.
+
 ---
 **Lead Architect:** Amanda Steele  
 *Confidentiality Notice: Deep state-machine logic schemas, raw geospatial routing coordinates, and proprietary corporate dataset parameters are strictly gated behind formal Phase 2 Non-Disclosure Agreements (NDAs).*
-
