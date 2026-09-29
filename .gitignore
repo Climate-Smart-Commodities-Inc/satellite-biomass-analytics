@@ -1,0 +1,42 @@
+# =============================================================================
+# Secrets — never commit credentials
+# =============================================================================
+.env
+.env.*
+!.env.example
+!.env.template
+
+# API keys / service accounts
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+client_secret*.json
+secrets.yml
+secrets.yaml
+.npmrc
+
+# =============================================================================
+# Browser page snapshots (.mht / .html) frequently embed live API keys
+# in map tile URLs, script tags, and request parameters.
+# The "Motlow KML Generator.mht" file leaked a Google Maps key this way.
+# =============================================================================
+*.mht
+*.mhtml
+*_files/
+saved-page*.html
+page-snapshot*.html
+
+# =============================================================================
+# Local tooling / IDE
+# =============================================================================
+.vscode/settings.json
+.idea/
+*.log
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
